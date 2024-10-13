@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /* top header */
 .container {
   width: 1170px;
@@ -71,29 +74,28 @@ header {
   line-height: 24px;
   color: #000;
 }
-.active{
-    border-bottom: 1px solid #000;
+.active {
+  border-bottom: 1px solid #000;
 }
 .list_item {
-    position: relative;
-    line-height: 24px;
-  }
-  
-  .list_item::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 1px;
-    width: 0%;
-    background-color: #000;
-    transition: 0.3s ease;
-  }
-  
-  .list_item:hover::after {
-    width: 100%;
-  }
-  
+  position: relative;
+  line-height: 24px;
+}
+
+.list_item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0%;
+  background-color: #000;
+  transition: 0.3s ease;
+}
+
+.list_item:hover::after {
+  width: 100%;
+}
 
 .search_cart_cont {
   display: flex;
@@ -120,6 +122,9 @@ header {
   font-weight: 400;
   line-height: 18px;
 }
+.search_cart_cont img, .pointer{
+    cursor: pointer;
+}
 .search_cont img {
   height: 24px;
   width: 24px;
@@ -130,7 +135,121 @@ header {
   gap: 16px;
 }
 /* main section  */
-main{
-    background-color: aqua;
-    height: 1400px;
+
+.main_container {
+  display: flex;
+  align-items: center;
+}
+.list_cont {
+  padding: 40px 16px 0 0;
+  border-right: 0.5px solid rgba(0, 0, 0, 0.3);
+  width: 233px;
+}
+.list_cont ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.fashion_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 217px;
+}
+.fashion_list img {
+  width: 24px;
+  height: 24px;
+}
+.fashion_list p,
+.list_cont li {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* main section banner  */
+.main_banner {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  width: 882px;
+  margin-left: 45px;
+  margin-top: 40px;
+  position: relative;
+}
+.banner_left_side {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 396px;
+  padding: 56px 38px 47px 64px;
+}
+.iphone_series_cont {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.iphone_series_cont img {
+  width: 40px;
+  height: 49px;
+}
+.iphone_series_cont h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.04em;
+  color: #fafafa;
+}
+.banner_shop_now {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.banner_shop_now p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fafafa;
+  position: relative;
+}
+.banner_shop_now p::after{
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    content: "";
+    width: 100%;
+    background-color: #fafafa;
+    height: 1px;
+}
+.banner_shop_now img{
+    width: 24px;
+    height: 24px;
+}
+.slider_cont{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    top: 319px;
+    left: 353px;
+    position: absolute;
+}
+.slider{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.act{
+    background-color: #DB4444;
+    border: 2px solid #fff
 }
