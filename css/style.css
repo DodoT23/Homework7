@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* top header */
+.container {
+  width: 1170px;
+  margin: auto;
+}
+header {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+.top_header {
+  width: 100%;
+  background-color: #000;
+  height: 48px;
+  color: #fafafa;
+}
+.top_header_contant {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 231px;
+}
+.top_header_text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.top_header_contant p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.top_header_text a {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fafafa;
+  text-decoration: underline;
+}
+.language {
+  display: flex;
+  align-items: center;
+}
+/* bottom header */
+.bottom_header {
+  height: 94px;
+  padding: 40px 0 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 148px;
+}
+.logo_nav_cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 190px;
+}
+.logo_nav_cont ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+.nav_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
+.active{
+    border-bottom: 1px solid #000;
+}
+.list_item {
+    position: relative;
+    line-height: 24px;
+  }
+  
+  .list_item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0%;
+    background-color: #000;
+    transition: 0.3s ease;
+  }
+  
+  .list_item:hover::after {
+    width: 100%;
+  }
+  
+
+.search_cart_cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.search_cont {
+  width: 243px;
+  height: 38px;
+  background-color: #f5f5f5;
+  padding: 7px 12px 7px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+#gsearch {
+  width: 170px;
+  border: none;
+  background-color: inherit;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.search_cont img {
+  height: 24px;
+  width: 24px;
+}
+.cart_cont {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+/* main section  */
+main{
+    background-color: aqua;
+    height: 1400px;
+}
