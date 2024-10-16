@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <header>
+        <div class="top_header">
+          <div class="top_header_contant container">
+            <div class="top_header_text">
+              <p>
+                Summer Sale For All Swim Suits And Free Express Delivery - OFF
+                50%!
+              </p>
+              <a href="#">ShopNow</a>
+            </div>
+            <div class="language">
+              <p>English</p>
+              <img src="photos/DropDown.svg" alt="drop_down" class="pointer" />
+            </div>
+          </div>
+        </div>
+        <div class="bottom_header container">
+          <div class="logo_nav_cont">
+            <a href="index.html"> <img src="photos/logo.svg" alt="logo" /></a>
+            <nav>
+              <ul>
+                <li class="list_item">
+                  <a href="index.html" class="nav_text">Home</a>
+                </li>
+                <li class="list_item">
+                  <a href="index.html" class="nav_text">Contact</a>
+                </li>
+                <li class="list_item">
+                  <a href="index.html" class="nav_text">About</a>
+                </li>
+                <li class="active">
+                  <a href="signup.html" class="nav_text">Sign Up</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+  
+          <div class="search_cart_cont">
+            <div class="search_cont">
+              <input
+                type="search"
+                id="gsearch"
+                name="gsearch"
+                placeholder="What are you looking for?"
+              />
+              <img src="photos/search_icon.svg" alt="search" />
+            </div>
+  
+            <div class="cart_cont">
+              <img src="photos/wishlist_icon.svg" alt="wishlist" />
+              <img src="photos/cart_icon.svg" alt="cart" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <div class="form_container">
+      <section class="form_section">
+        <div class="form_header">
+          <h2>Premium</h2>
+          <h2>$199 <span>/month</span></h2>
+        </div>
+        <p class="form_header_desc">Faster Instagram Growth</p>
+        <form action="#">
+          <input type="email" placeholder="Email" class="input" required />
+          <input
+            type="text"
+            placeholder="Cardholder Name"
+            class="input"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Card Number"
+            class="input card_image"
+            required
+          />
+
+          <div class="date_cvv_cont">
+            <input
+              type="data"
+              placeholder="Date"
+              class="input data_input"
+              required
+            />
+            <input
+              type="text"
+              placeholder="CVV"
+              class="input cvv_input"
+              required
+            />
+          </div>
+
+          <div class="country_zipp_cont">
+            <select name="country" class="input country_input">
+              <option value="default">Country</option>
+              <option value="georgia">Georgia</option>
+              <option value="austria">Austria</option>
+              <option value="italy">Italy</option>
+            </select>
+            <input type="text" placeholder="Zip" class="input zip_input" />
+          </div>
+          <input type="text" placeholder="Discount Code" class="input" />
+          <div class="checkbox_cont">
+            <input type="checkbox" class="checkbox" checked="" />
+            <label>
+              I accept the
+              <span
+                ><a href="#" class="colored_label">Terms of Service</a></span
+              >
+              and
+              <span><a href="#" class="colored_label"> Policy </a></span>
+            </label>
+          </div>
+          <button type="submit" class="form_btn">
+            Get started | $199 <span class="btn_faded"> $249 </span>
+          </button>
+        </form>
+        <p class="have_coupon">Have a coupon?</p>
+      </section>
+    </div>
+  </body>
+</html>
